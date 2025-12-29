@@ -1,5 +1,5 @@
 {
-  "name": "console-plugin-template",
+  "name": "openshift-console-plugin-poc",
   "version": "0.0.1",
   "description": "Template project for OpenShift Console plugins",
   "private": true,
