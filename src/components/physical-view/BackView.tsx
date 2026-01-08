@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Tooltip } from '@patternfly/react-core';
 import { ManagedNodeKind } from '../../models';
+import Fan from './Fan';
+import PSU from './PSU';
 import './physical-view.css';
 
 export interface BackViewProps {
@@ -55,35 +57,13 @@ const BackView: React.FC<BackViewProps> = ({ node }) => {
         <div className="pv-back-panel__fans">
           <div className="pv-back-panel__fans-grid">
             {displayFans.slice(0, 6).map((fan, index) => (
-              <Tooltip
+              <Fan
                 key={fan.fqdd || index}
-                content={
-                  <div>
-                    <div><strong>{fan.fqdd || `Fan ${index + 1}`}</strong></div>
-                    <div>RPM: {fan.rpm}</div>
-                    <div>Status: {fan.status || 'Unknown'}</div>
-                  </div>
-                }
-              >
-                <div 
-                  className={`pv-back-fan pv-back-fan--${getStatus(fan.status)}`}
-                  role="img"
-                  aria-label={`${fan.fqdd || `Fan ${index + 1}`}, RPM: ${fan.rpm}, Status: ${fan.status || 'Unknown'}`}
-                >
-                  <svg viewBox="0 0 40 40" className="pv-back-fan__svg">
-                    <circle cx="20" cy="20" r="18" className="pv-back-fan__housing" />
-                    <circle cx="20" cy="20" r="4" className="pv-back-fan__center" />
-                    {[0, 60, 120, 180, 240, 300].map((angle) => (
-                      <path
-                        key={angle}
-                        d="M20 8 L23 16 L20 14 L17 16 Z"
-                        className="pv-back-fan__blade"
-                        transform={`rotate(${angle}, 20, 20)`}
-                      />
-                    ))}
-                  </svg>
-                </div>
-              </Tooltip>
+                index={index + 1}
+                fqdd={fan.fqdd}
+                rpm={fan.rpm}
+                status={fan.status}
+              />
             ))}
           </div>
         </div>
