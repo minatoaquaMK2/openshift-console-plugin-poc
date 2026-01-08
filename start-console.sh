@@ -49,6 +49,6 @@ if [ -x "$(command -v podman)" ]; then
         podman run --pull always --platform $CONSOLE_IMAGE_PLATFORM --rm -p "$CONSOLE_PORT":9000 --env-file <(set | grep BRIDGE) $CONSOLE_IMAGE
     fi
 else
-    BRIDGE_PLUGINS="${PLUGIN_NAME}=http://host.docker.internal:9001"
+    BRIDGE_PLUGINS="${PLUGIN_NAME}=http://192.168.201.141:9001"
     docker run --pull always --platform $CONSOLE_IMAGE_PLATFORM --rm -p "$CONSOLE_PORT":9000 --env-file <(set | grep BRIDGE) $CONSOLE_IMAGE
 fi
