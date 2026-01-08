@@ -1,13 +1,13 @@
 # Plan: Physical View Dashboard and Node Details
 
-## Phase 1: Foundation & Data Model
+## Phase 1: Foundation & Data Model [checkpoint: e574c27]
 - [x] Task: Define ManagedNode K8s Model & Types (fe5a9b5)
     - [x] Subtask: Write Tests for Model Definition (Ensure correct Group/Version/Kind)
     - [x] Subtask: Implement `ManagedNodeModel` and TypeScript interfaces for the CRD status/spec.
 - [x] Task: Setup Plugin Routing (51eb0f8)
     - [x] Subtask: Write Tests for Route Configuration
     - [x] Subtask: Configure `console-extensions.json` to add the new navigation item "Physical View" pointing to the plugin.
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Foundation & Data Model' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Foundation & Data Model' (Protocol in workflow.md)
 
 ## Phase 2: Overall Dashboard (List View)
 - [ ] Task: Implement Node List Data Fetching
