@@ -13,9 +13,9 @@
 - [x] Task: Implement Node List Data Fetching (8785483)
     - [x] Subtask: Write Tests for `useManagedNodes` hook (mocking `useK8sWatchResource`)
     - [x] Subtask: Create a custom hook `useManagedNodes` to wrap the K8s watch logic.
-- [ ] Task: Implement Node List UI
-    - [ ] Subtask: Write Tests for `NodeListComponent` (verify rendering of list items)
-    - [ ] Subtask: Build the `NodeList` component using PatternFly's `Table` or `DataList`.
+- [x] Task: Implement Node List UI (76c1580)
+    - [x] Subtask: Write Tests for `NodeListComponent` (verify rendering of list items)
+    - [x] Subtask: Build the `NodeList` component using PatternFly's `Table` or `DataList`.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Overall Dashboard (List View)' (Protocol in workflow.md)
 
 ## Phase 3: Physical View Components (Front & Back)
