@@ -155,4 +155,19 @@ describe('Physical View Page E2E Tests', () => {
       });
     });
   });
+
+  describe('Physical View UI', () => {
+    beforeEach(() => {
+      cy.login();
+      cy.visit('/physical-view');
+    });
+
+    it('should render the Physical View page title', () => {
+      cy.get('h1').contains('Physical View').should('be.visible');
+    });
+
+    it('should display the NodeList component', () => {
+      cy.get('.pv-node-list').should('exist');
+    });
+  });
 });
