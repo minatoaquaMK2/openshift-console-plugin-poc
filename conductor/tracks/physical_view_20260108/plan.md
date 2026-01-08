@@ -16,34 +16,34 @@
 - [x] Task: Implement Node List UI (76c1580)
     - [x] Subtask: Write Tests for `NodeListComponent` (verify rendering of list items)
     - [x] Subtask: Build the `NodeList` component using PatternFly's `Table` or `DataList`.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Overall Dashboard (List View)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Overall Dashboard (List View)' (Protocol in workflow.md)
 
 ## Phase 3: Physical View Components (Front & Back)
-- [ ] Task: Implement Shared Physical Components
-    - [ ] Subtask: Write Tests for `Slot`, `Port`, `Led` components (verify props to visual mapping)
-    - [ ] Subtask: Create reusable UI components for individual hardware elements (Drive Slots, Ports, LEDs).
-- [ ] Task: Implement Front View Layout
-    - [ ] Subtask: Write Tests for `FrontView` (verify layout structure)
-    - [ ] Subtask: Assemble the `FrontView` component using shared components to match `frontview.png`.
-- [ ] Task: Implement Back View Layout
-    - [ ] Subtask: Write Tests for `BackView` (verify layout structure)
-    - [ ] Subtask: Assemble the `BackView` component using shared components to match `backview.png`.
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Physical View Components (Front & Back)' (Protocol in workflow.md)
+- [x] Task: Implement Shared Physical Components
+    - [x] Subtask: Write Tests for `Slot`, `Port`, `Led` components (verify props to visual mapping)
+    - [x] Subtask: Create reusable UI components for individual hardware elements (Drive Slots, Ports, LEDs).
+- [x] Task: Implement Front View Layout
+    - [x] Subtask: Write Tests for `FrontView` (verify layout structure)
+    - [x] Subtask: Assemble the `FrontView` component using shared components to match `frontview.png`.
+- [x] Task: Implement Back View Layout
+    - [x] Subtask: Write Tests for `BackView` (verify layout structure)
+    - [x] Subtask: Assemble the `BackView` component using shared components to match `backview.png`.
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Physical View Components (Front & Back)' (Protocol in workflow.md)
 
 ## Phase 4: Integration & Detail Page
-- [ ] Task: Implement Node Detail Page Container
-    - [ ] Subtask: Write Tests for `NodeDetailPage` (verify tab switching and data passing)
-    - [ ] Subtask: Create the `NodeDetailPage` to host the Front/Back views and handle routing parameters (node name).
-- [ ] Task: Connect Detail Page to Live Data
-    - [ ] Subtask: Write Tests for Detail Data Fetching (mock `useK8sWatchResource` for single item)
-    - [ ] Subtask: Update `NodeDetailPage` to fetch the specific `ManagedNode` by name and pass data to views.
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: Integration & Detail Page' (Protocol in workflow.md)
+- [x] Task: Implement Node Detail Page Container
+    - [x] Subtask: Write Tests for `NodeDetailPage` (verify tab switching and data passing)
+    - [x] Subtask: Create the `NodeDetailPage` to host the Front/Back views and handle routing parameters (node name).
+- [x] Task: Connect Detail Page to Live Data
+    - [x] Subtask: Write Tests for Detail Data Fetching (mock `useK8sWatchResource` for single item)
+    - [x] Subtask: Update `NodeDetailPage` to fetch the specific `ManagedNode` by name and pass data to views.
+- [x] Task: Conductor - User Manual Verification 'Phase 4: Integration & Detail Page' (Protocol in workflow.md)
 
 ## Phase 5: Polish & Accessibility
-- [ ] Task: Add Tooltips and Accessibility Labels
-    - [ ] Subtask: Write Tests for Accessibility (check for aria-labels)
-    - [ ] Subtask: Add PatternFly `Tooltip` components to all physical elements and ensure ARIA compliance.
-- [ ] Task: Final E2E Verification
-    - [ ] Subtask: Write Cypress E2E Tests (Full flow: List -> Detail -> Tab Switch)
-    - [ ] Subtask: Run and fix any issues found in E2E tests.
+- [x] Task: Add Tooltips and Accessibility Labels
+    - [x] Subtask: Write Tests for Accessibility (check for aria-labels)
+    - [x] Subtask: Add PatternFly `Tooltip` components to all physical elements and ensure ARIA compliance.
+- [x] Task: Final E2E Verification
+    - [x] Subtask: Write Cypress E2E Tests (Full flow: List -> Detail -> Tab Switch)
+    - [x] Subtask: Run and fix any issues found in E2E tests.
 - [ ] Task: Conductor - User Manual Verification 'Phase 5: Polish & Accessibility' (Protocol in workflow.md)

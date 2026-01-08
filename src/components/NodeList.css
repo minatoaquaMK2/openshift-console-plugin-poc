@@ -1,0 +1,150 @@
+/* NodeList Page Styles */
+
+/* Page Header */
+.pv-page-header {
+  background-color: var(--pf-v5-global--BackgroundColor--100);
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--pf-v5-global--BorderColor--100);
+}
+
+.pv-page-header .pf-v5-c-title {
+  margin: 0;
+  font-weight: 400;
+}
+
+.pv-node-list-page {
+  padding: 16px 24px;
+}
+
+/* Cluster Summary Card */
+.pv-cluster-summary {
+  margin-bottom: 16px;
+  border: 1px solid var(--pf-v5-global--BorderColor--100);
+}
+
+.pv-summary-item {
+  padding: 8px 0;
+}
+
+.pv-summary-label {
+  font-size: 12px;
+  color: var(--pf-v5-global--Color--200);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pv-summary-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--pf-v5-global--Color--100);
+}
+
+.pv-summary-value--small {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pv-node-count {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pv-issues-count {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Health Status Text */
+.pv-health-text {
+  font-weight: 500;
+}
+
+.pv-health-text--healthy {
+  color: var(--pf-v5-global--success-color--100);
+}
+
+.pv-health-text--warning {
+  color: var(--pf-v5-global--warning-color--100);
+}
+
+.pv-health-text--critical {
+  color: var(--pf-v5-global--danger-color--100);
+}
+
+/* Node Table Card */
+.pv-node-table-card {
+  border: 1px solid var(--pf-v5-global--BorderColor--100);
+}
+
+.pv-node-table {
+  width: 100%;
+}
+
+.pv-node-table th {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--pf-v5-global--Color--200);
+  white-space: nowrap;
+}
+
+.pv-node-table td {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+/* Links */
+.pv-node-link {
+  color: var(--pf-v5-global--link--Color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pv-node-link:hover {
+  text-decoration: underline;
+}
+
+.pv-link {
+  color: var(--pf-v5-global--link--Color);
+  text-decoration: none;
+}
+
+.pv-link:hover {
+  text-decoration: underline;
+}
+
+/* Usage Cell */
+.pv-usage-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.pv-usage-percent {
+  font-size: 12px;
+  color: var(--pf-v5-global--Color--200);
+  min-width: 32px;
+}
+
+.pv-usage-bar {
+  flex: 1;
+  max-width: 80px;
+}
+
+.pv-usage-bar .pf-v5-c-progress__bar {
+  height: 8px;
+}
+
+/* Checkbox styling */
+.pv-node-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Row hover effect */
+.pv-node-table tbody tr:hover {
+  background-color: var(--pf-v5-global--BackgroundColor--200);
+}

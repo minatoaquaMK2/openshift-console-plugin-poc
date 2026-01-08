@@ -42,6 +42,15 @@ export type ManagedNodeDrive = {
   type?: string;
 };
 
+export type ManagedNodeNetworkAdapter = {
+  fqdd?: string;
+  description?: string;
+  mac_address?: string;
+  speed_gbps?: number;
+  status?: string;
+  type?: string;
+};
+
 export type ManagedNodeInventory = {
   system_info?: {
     bios_version?: string;
@@ -69,6 +78,9 @@ export type ManagedNodeInventory = {
   storage?: {
     controllers?: string[];
     drives?: ManagedNodeDrive[];
+  };
+  network?: {
+    adapters?: ManagedNodeNetworkAdapter[];
   };
 };
 
