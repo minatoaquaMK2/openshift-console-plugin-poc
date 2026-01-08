@@ -8,11 +8,37 @@
     }
   },
   {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/physical-view",
+      "component": { "$codeRef": "PhysicalViewPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/physical-view/nodes/:name",
+      "component": { "$codeRef": "PhysicalViewPage" }
+    }
+  },
+  {
     "type": "console.navigation/href",
     "properties": {
       "id": "example",
       "name": "%plugin__console-plugin-template~Plugin Example%",
       "href": "/example",
+      "perspective": "admin",
+      "section": "home"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "physical-view",
+      "name": "%plugin__console-plugin-template~Physical View%",
+      "href": "/physical-view",
       "perspective": "admin",
       "section": "home"
     }
