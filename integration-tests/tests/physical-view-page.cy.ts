@@ -167,7 +167,7 @@ describe('Physical View Page E2E Tests', () => {
     });
 
     it('should display the NodeList component', () => {
-      cy.get('.pv-node-list').should('exist');
+      cy.get('.pv-node-list-page').should('exist');
     });
   });
 });
