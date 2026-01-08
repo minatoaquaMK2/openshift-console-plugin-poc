@@ -1,9 +1,9 @@
 # Plan: Physical View Dashboard and Node Details
 
 ## Phase 1: Foundation & Data Model
-- [ ] Task: Define ManagedNode K8s Model & Types
-    - [ ] Subtask: Write Tests for Model Definition (Ensure correct Group/Version/Kind)
-    - [ ] Subtask: Implement `ManagedNodeModel` and TypeScript interfaces for the CRD status/spec.
+- [x] Task: Define ManagedNode K8s Model & Types (fe5a9b5)
+    - [x] Subtask: Write Tests for Model Definition (Ensure correct Group/Version/Kind)
+    - [x] Subtask: Implement `ManagedNodeModel` and TypeScript interfaces for the CRD status/spec.
 - [ ] Task: Setup Plugin Routing
     - [ ] Subtask: Write Tests for Route Configuration
     - [ ] Subtask: Configure `console-extensions.json` to add the new navigation item "Physical View" pointing to the plugin.
